@@ -1,0 +1,45 @@
+:root {
+    font-size: 62.5%;
+
+    --brand-gradient: #FC4A1A #F7B733;
+    --brand-color-primary: #F7B733;
+    --brand-color-secondary: #FC4A1A;
+
+    --bg-color: #09090B;
+    --surface-color: #18181B;
+    --stroke-color: #27272A;
+    --text-color-primary: #F4F4F5;
+    --text-color-secondary: #A1A1AA;
+
+    --inter: 'Inter', system-ui, sans-serif;
+    --pay: 'Paytone One', system-ui, sans-serif;
+
+    --fw-base: 400;
+    --fw-md: 500;
+    --fw-bold: 800;
+
+    /* PC */
+    --spn: 1.4rem;
+    --p: 1.6rem;
+    --h3: 3.2rem;
+    --h2: 4.8rem.
+    --h1: 6.4rem;
+
+
+    /* Mobile */
+    --fs-sm: 1.4rem;
+    --fs-p: 1.6rem;
+    --fs-h3: 2rem;
+    --fs-h2: 2.4rem;
+    --fs-h1: 4rem;
+}
+
+@media (width >= 128rem) {
+    :root {
+        --spn: 1.4rem;
+        --p: 1.6rem;
+        --h3: 3.2rem;
+        --h2: 4.8rem;
+        --h1: 6.4rem;
+    }
+}
