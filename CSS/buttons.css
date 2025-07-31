@@ -1,0 +1,119 @@
+.btn {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+
+    font-family: var(--inter);
+  }
+
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(90deg, #FC4A1A, #F7B733);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .btn:hover::before {
+    opacity: 1;
+  }
+
+  .btn:hover {
+    color: transparent;
+    background-image: linear-gradient(90deg, #FC4A1A, #F7B733);
+    background-clip: text;
+    -webkit-background-clip: text;
+    border-color: transparent;
+  }
+
+.btn-sm{
+    font-size: var(--p);
+    padding: 0.8rem 1.6rem;
+    width: 8rem;
+    height: 4rem;
+}
+
+.btn-md {
+    padding: 1.2rem 2.4rem;
+    font-size: var(--h3);
+    width: 9.6rem;
+    height: 4.8rem;
+}
+
+.btn-lg {
+    padding: 1.3rem 3.2rem;
+    font-size: var(--h2);
+    width: 12rem;
+    height: 5.6rem;
+}
+
+.btn-normal {
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-family: var(--inter);
+}
+
+.btn-normal:hover {
+    color: black;
+    background: linear-gradient(90deg, #FC4A1A, #F7B733);;
+}
+
+.btn-transparente {
+    background-color: transparent;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+
+    font-family: var(--inter);
+  }
+
+  .btn-transparente::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(90deg,  #FC4A1A, #F7B733);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .btn-transparente:hover::before {
+    opacity: 1;
+  }
+
+  .btn-transparente:hover {
+    color: transparent;
+    background-image: linear-gradient(90deg,  #FC4A1A, #F7B733);
+    background-clip: text;
+    -webkit-background-clip: text;
+    border-color: transparent;
+  }
