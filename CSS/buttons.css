@@ -117,3 +117,61 @@
     -webkit-background-clip: text;
     border-color: transparent;
   }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+  }
+
+  a:hover {
+    background: linear-gradient(
+      90deg,
+      var(--brand-color-secondary) 0%,
+      var(--brand-color-primary) 100%
+    );
+    
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  a.social {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: block;
+    background-color: white; /* cor padrão */
+    
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+  }
+  
+  /* Ícones individuais */
+  a.social[aria-label="tiktok"] {
+    -webkit-mask-image: url("../assets/icons/tiktok.svg");
+    mask-image: url("../assets/icons/tiktok.svg");
+  }
+  
+  a.social[aria-label="instagram"] {
+    -webkit-mask-image: url("../assets/icons/instagram.svg");
+    mask-image: url("../assets/icons/instagram.svg");
+  }
+  
+  a.social[aria-label="twitter"] {
+    -webkit-mask-image: url("../assets/icons/twitter.svg");
+    mask-image: url("../assets/icons/twitter.svg");
+  }
+  
+  a.social[aria-label="discord"] {
+    -webkit-mask-image: url("../assets/icons/discord.svg");
+    mask-image: url("../assets/icons/discord.svg");
+  }
+  
+  /* Gradiente no hover */
+  a.social:hover {
+    background: linear-gradient(45deg, #FC4A1A, #F7B733);
+  }
